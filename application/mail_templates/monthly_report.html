@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monthly Purchase Report</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #007bff;
+    }
+
+    p {
+      color: #555555;
+      line-height: 1.6;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #007bff;
+      color: #ffffff;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .footer {
+      margin-top: 20px;
+      color: #777777;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Monthly Purchase Report</h2>
+    <p>Hello {{ user.email }},</p>
+    <p>Here is your monthly purchase report:</p>
+
+
+    {{ graph_img | safe }}
+    <p>Expenditure variation throughout this month</p>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Total Price</th>
+          <th>Purchase Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for purchase in purchases %}
+        <tr>
+          <td>{{ purchase.product.ProductName }}</td>
+          <td>{{ purchase.Quantity }}</td>
+          <td>₹{{ purchase.TotalPrice }}</td>
+          <td>{{ purchase.PurchaseDate }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <p>Happy Shopping!</p>
+    <p class="footer">Thank you for choosing <a href="http://127.0.0.1:5000/#/login">GroceryMart!</a></p>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GroceryMart Daily Reminder</title>
+
+  <!-- Add some basic styles for better aesthetics -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #007bff;
+    }
+
+    p {
+      color: #555555;
+      line-height: 1.6;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>GroceryMart Daily Reminder</h1>
+    <p>Dear {{email}},</p>
+    <p>Just a friendly reminder to avoid any last minute hassle for groceries 🌟🛍️. Don't forget to visit GroceryMart for a convenient and enjoyable grocery shopping experience.</p>
+    <p>Best regards,</p>
+    <p>The GroceryMart Team</p>
+
+    <!-- Optional Call to Action (CTA) Button -->
+    <a href="http://127.0.0.1:5000/#/login" class="cta-button">Visit GroceryMart</a>
+  </div>
+</body>
+
+</html>

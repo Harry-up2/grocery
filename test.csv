@@ -1,0 +1,15 @@
+ProductID,ProductName,Description,RatePerUnit,StockQuantity,QuantitySold
+1,Brown rice,1kg fancy rice,200.0,50,10
+2,Single Toned Milk,1L fresh buffalo milk,55.0,125,13
+3,Double Toned Milk,1L cream rich milk,65.0,25,4
+4,Mansuri,Gopal Bhog 15kg,44.0,48,1
+5,Sharbati,Healthy rice,86.0,56,6
+6,Rajma,500g also known as the kidney beans,84.0,48,
+7,Chana Dal,500g protein rich pulse,75.0,70,
+8,Lassi,sweet tasty buttermilk,25.0,83,2
+9,Basmati,1kg long rice best for pullav,95.0,200,
+10,Arhar Dal,500g that yellow dal,64.0,129,
+11,Malka Dal,500g healthy brown dal,82.0,163,
+12,Aloo Bhujiya,350g most famous and common snack,65.0,70,
+13,Navratna,500g mixture of several tasty spicy things,72.0,72,5
+14,Moong DAl,500g namkeen of this dal,45.0,59,8
