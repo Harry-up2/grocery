@@ -84,7 +84,7 @@ To get started with the project, follow these steps:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/GroceryMart.git
+    git clone https://github.com/Harry-up2/grocery.git
     cd GroceryMart
     ```
 
