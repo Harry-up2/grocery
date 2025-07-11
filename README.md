@@ -1,6 +1,3 @@
-Here's a creative and emoji-enhanced version of your README content:
-
----
 
 # 🛒 GroceryMart
 
